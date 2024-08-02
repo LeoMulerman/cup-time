@@ -1,13 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <>
       <header className="header">
         <div className="container header__container">
-          <a className="header__logo-link">
+          <Link className="header__logo-link" to="/">
             <img className="header__logo" src="./image/logo.svg" alt="logo" />
-          </a>
+          </Link>
 
           <nav className="header__nav">
             <ul className="header__menu">
@@ -41,9 +42,9 @@ const Header = () => {
             </ul>
           </nav>
 
-          <a href="cart.html" className="header__cart-link">
+          <Link to="/cart" className="header__cart-link">
             6
-          </a>
+          </Link>
         </div>
       </header>
     </>
